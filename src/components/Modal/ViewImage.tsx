@@ -28,7 +28,7 @@ export function ModalViewImage({
           </ModalBody>
           <ModalFooter backgroundColor="#353431" justifyContent="end" padding="8px">
             <Link href={imgUrl} lineHeight="16px" fontSize="14px"  >
-              <a> Abrir original</a>
+              Abrir original
             </Link>
           </ModalFooter>
         </ModalContent>

@@ -27,7 +27,11 @@ type AxiosResponse = {
 
 const fetchImages = async ({ pageParam = null }: fetchImagesParams) => {
   const data = await api.get<AxiosResponse>(
-    `api/images?after=${pageParam ? pageParam : ''}`
+    `api/images`, {
+      params: {
+        after: pageParam
+      }
+    }
   );
   return data;
 };
